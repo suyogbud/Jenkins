@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials') {
-                        docker.image('yourusername/yourimage:latest').push('latest')
+                        docker.image('suyogbc/suyogjenkins:latest').push('latest')
                     }
                 }
             }
